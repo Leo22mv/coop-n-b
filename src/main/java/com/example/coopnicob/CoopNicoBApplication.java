@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.example.coopnicob.models.Cliente;
 import com.example.coopnicob.models.Vendedor;
@@ -14,6 +15,7 @@ import com.example.coopnicob.repository.ClienteRepository;
 import com.example.coopnicob.repository.VendedorRepository;
 
 @SpringBootApplication
+// @ComponentScan(basePackages = "com.example.coopnicob.components")
 public class CoopNicoBApplication {
 
 	public static void main(String[] args) {
