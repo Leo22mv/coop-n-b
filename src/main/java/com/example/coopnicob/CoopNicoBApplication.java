@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -15,7 +16,8 @@ import com.example.coopnicob.repository.ClienteRepository;
 import com.example.coopnicob.repository.VendedorRepository;
 
 @SpringBootApplication
-// @ComponentScan(basePackages = "com.example.coopnicob.components")
+// @ComponentScan(basePackages = "com.example.coop-nico-b")
+(exclude = {DataSourceAutoConfiguration.class })
 public class CoopNicoBApplication {
 
 	public static void main(String[] args) {
