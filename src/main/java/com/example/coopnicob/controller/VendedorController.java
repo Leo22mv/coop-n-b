@@ -15,8 +15,7 @@ import com.example.coopnicob.models.Vendedor;
 import com.example.coopnicob.service.IVendedorService;
 
 @RestController
-// @CrossOrigin(origins = "http://localhost:4200")
-// @CrossOrigin(origins = "https://coop-n.web.app")
+@CrossOrigin(origins = "https://coop-n.web.app")
 public class VendedorController {
     @Autowired
     private IVendedorService ivendedorService;
